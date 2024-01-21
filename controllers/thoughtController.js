@@ -49,7 +49,7 @@ module.exports = {
             { $set: req.body }
         )
             .then((thought) =>
-                !course
+                !thought
                     ? res.status(404).json({ message: 'No thought found' })
                     : res.json(thought)
             )
@@ -85,12 +85,12 @@ module.exports = {
     deleteReaction(req, res) {
         Thought.findOneAndUpdate(
             { _id: req.params.thoughtId },
-            { $pull: { reactions: { reactionId: req.body.reactionId } } },
+            { $pull: { reactions: req.body } },
         )
-            .then((user) =>
-                !user
-                    ? res.status(404).json({ message: 'No user found' })
-                    : res.json(user)
+            .then((thought) =>
+                !thought
+                    ? res.status(404).json({ message: 'No thought found' })
+                    : res.json(thought)
             )
             .catch((err) => res.status(500).json(err));
     },

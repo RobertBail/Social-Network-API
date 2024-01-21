@@ -1,30 +1,34 @@
 const userSeeds = [
+    
     {
-        username: 'jeff1000',
-        email: 'jeff@email.com'
+        username: 'falconBird202',
+        email: 'oliviah06@gmail.com'
+    }, 
+    {
+        username: 'AndyThomas4',
+        email: 'AndyThomas04@gmail.com'
     },
     {
-        username: 'jimbo44',
-        email: 'jimbo@hotmail.com'
-    },
-    {
-        username: 'falconBird',
-        email: 'oliviah01@gmail.com'
+        username: 'MrsPJ',
+        email: 'PJ1000@gmail.com'
     }
+
 ]
 
 const thoughtSeeds = 
-    [{
-        thoughtText: 'Cillian Murphy sounds like Robin Williams in Oppenheimer',
-        username: 'jeff1000'
-    },
-    {
-        thoughtText: 'Sunflowers are an underrated gift',
-        username: 'jimbo44'
-    },
+    [
+    
     {
         thoughtText: 'I like snakes and spiders',
-        username: 'falconBird'
+        username: 'falconBird202'
+    },
+    {
+        thoughtText: 'I like travelling to space in rockets',
+        username: 'AndyThomas4'
+    },
+    {
+        thoughtText: 'I want to go to Fiji',
+        username: 'MrsPJ'
     }
 ]
 
